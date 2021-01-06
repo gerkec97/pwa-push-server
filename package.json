@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/gerkec97/pwa-push-server#readme",
   "dependencies": {
+    "node-storage": "0.0.9",
     "nodemon": "^2.0.6",
     "urlsafe-base64": "^1.0.0",
     "web-push": "^3.4.4"
