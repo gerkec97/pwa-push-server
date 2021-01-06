@@ -4,7 +4,7 @@
   "description": "Push Server Project from Udemy Concise PWA Masterclass",
   "main": "server/index.js",
   "scripts": {
-    "start": "nodemon server/",
+    "start": "node_modules/.bin/nodemon server/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
