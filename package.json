@@ -1,0 +1,24 @@
+{
+  "name": "pwa-push-server",
+  "version": "1.0.0",
+  "description": "Push Server Project from Udemy Concise PWA Masterclass",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerkec97/pwa-push-server.git"
+  },
+  "keywords": [
+    "pwa",
+    "push-server"
+  ],
+  "author": "Gerrit >",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gerkec97/pwa-push-server/issues"
+  },
+  "homepage": "https://github.com/gerkec97/pwa-push-server#readme"
+}
