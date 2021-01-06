@@ -5,7 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node_modules/.bin/nodemon server/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vapid": "node_modules/.bin/web-push generate-vapid-keys --json > server/vapid.json"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/gerkec97/pwa-push-server#readme",
   "dependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "urlsafe-base64": "^1.0.0",
+    "web-push": "^3.4.4"
   }
 }

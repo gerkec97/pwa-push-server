@@ -1,6 +1,6 @@
 // Modules
 const http = require('http')
-
+const push = require('./push')
 // Create HTTP Server
 http.createServer( (request, response) => {
 
@@ -12,9 +12,13 @@ http.createServer( (request, response) => {
   if (method === 'POST' && url.match(/^\/subscribe\/?$/)) {
     let body = []
     request.on('data', chunk => body.push(chunk))
-    request.on('end', () => response.end('Subscribed'))
+    request.on('end', () => {
+      const subscription = JSON.parse(body.toString())
+      push.addSubscription(subscription)
+      response.end('Subscribed')
+    })
   } else if (method === 'GET' && url.match(/^\/key\/?$/)) {
-    response.end('Public Key')
+    response.end(push.getKey())
   } else if (method === 'POST' && url.match(/^\/push\/?$/)) {
     let body = []
     request.on('data', chunk => body.push(chunk))
