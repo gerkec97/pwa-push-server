@@ -4,7 +4,7 @@
   "description": "Push Server Project from Udemy Concise PWA Masterclass",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/",
+    "start": "nodemon server/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/gerkec97/pwa-push-server/issues"
   },
-  "homepage": "https://github.com/gerkec97/pwa-push-server#readme"
+  "homepage": "https://github.com/gerkec97/pwa-push-server#readme",
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
